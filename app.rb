@@ -7,3 +7,7 @@ end
 get '/assignments' do
   erb :assignments
 end
+
+get '/rules' do
+  erb :rules
+end
