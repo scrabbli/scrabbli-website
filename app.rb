@@ -3,8 +3,6 @@ require 'active_support/core_ext'
 require 'sinatra/simple-navigation'
 require 'simple-navigation-bootstrap'
 require 'padrino-helpers'
-require 'sinatra/flash'
-require 'sinatra/redirect_with_flash'
 require './Assignment'
 
 register Padrino::Helpers

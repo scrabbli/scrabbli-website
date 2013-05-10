@@ -68,10 +68,9 @@ GEM
       rack (~> 1.5, >= 1.5.2)
       rack-protection (~> 1.4)
       tilt (~> 1.3, >= 1.3.4)
-    sinatra-flash (0.3.0)
-      sinatra (>= 1.0.0)
-    sinatra-redirect-with-flash (0.2.0)
-      sinatra (>= 1.0.0)
+    sinatra-activerecord (1.2.2)
+      activerecord (~> 3.0)
+      sinatra (~> 1.0)
     sinatra-simple-navigation (3.6.0)
       simple-navigation (>= 3.10.1)
     thin (1.5.0)
@@ -96,7 +95,6 @@ DEPENDENCIES
   pg
   simple-navigation-bootstrap
   sinatra
-  sinatra-flash
-  sinatra-redirect-with-flash
+  sinatra-activerecord
   sinatra-simple-navigation
   thin
