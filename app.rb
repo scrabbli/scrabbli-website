@@ -3,8 +3,9 @@ require 'active_support/core_ext'
 require 'sinatra/simple-navigation'
 require 'simple-navigation-bootstrap'
 require 'padrino-helpers'
-require './config/environments'
 require './assignment'
+require './config/environments'
+
 
 register Padrino::Helpers
 use ActiveRecord::ConnectionAdapters::ConnectionManagement
