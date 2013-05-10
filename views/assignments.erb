@@ -6,7 +6,7 @@
       <th>Language</th>
       <th>Repo</th>
     </tr>
-    <% Assignment.all.each do |assignment| %>
+    <% @assignments.each do |assignment| %>
       <tr>
         <td><%= assignment.name %></td>
         <td><%= assignment.language %></td>

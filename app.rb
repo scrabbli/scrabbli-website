@@ -3,7 +3,8 @@ require 'active_support/core_ext'
 require 'sinatra/simple-navigation'
 require 'simple-navigation-bootstrap'
 require 'padrino-helpers'
-require './Assignment'
+require './config/environments'
+require './assignment'
 
 register Padrino::Helpers
 use ActiveRecord::ConnectionAdapters::ConnectionManagement
@@ -13,6 +14,7 @@ get '/' do
 end
 
 get '/assignments' do
+  @assignments = Assignment.all
   render :erb, :assignments
 end
 
