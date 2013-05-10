@@ -1,8 +1,0 @@
-CREATE DATABASE scrabbli;
-\c scrabbli
-CREATE TABLE IF NOT EXISTS assignments (
-	id				SERIAL PRIMARY KEY,
-	name			varchar(50) NOT NULL,
-	language		varchar(100) NOT NULL,
-	github			varchar(100) NOT NULL
-);
