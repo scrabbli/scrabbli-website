@@ -1,0 +1,17 @@
+body {
+	padding: 20px;
+}
+
+#main-column {
+	max-width: 900px !important;
+	margin: 0px auto;
+}
+
+#content {
+	max-width: 860px !important;
+	padding: 0px 20px;
+}
+
+#sse-seal {
+	text-align: center;
+}
