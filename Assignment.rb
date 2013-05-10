@@ -1,9 +1,17 @@
 require 'active_record'
+require 'pg'
+require 'uri'
+
+db = URI.parse(ENV['DATABASE_URL'] || 'postgres://localhost/scrabbli')
 
 ActiveRecord::Base.establish_connection(
-  :adapter => "postgresql",
-  :host => "localhost",
-  :database => "scrabbli"
+  :adapter  => db.scheme == 'postgres' ? 'postgresql' : db.scheme,
+  :host     => db.host,
+  :port     => db.port,
+  :username => db.user,
+  :password => db.password,
+  :database => db.path[1..-1],
+  :encoding => 'utf8'
 )
 
 class Assignment < ActiveRecord::Base

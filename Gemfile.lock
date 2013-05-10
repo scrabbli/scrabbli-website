@@ -55,6 +55,7 @@ GEM
     padrino-mailer (0.9.21)
       mail (>= 2.2.0)
       padrino-core (= 0.9.21)
+    pg (0.15.1)
     polyglot (0.3.3)
     rack (1.5.2)
     rack-protection (1.5.0)
@@ -92,6 +93,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord
   padrino
+  pg
   simple-navigation-bootstrap
   sinatra
   sinatra-flash
