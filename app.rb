@@ -21,7 +21,6 @@ end
 
 post '/assignments' do
   @assignment = Assignment.create(params[:assignment])
-  flash[:success] = "You've successfully joined scrabbli."
   redirect "/assignments"
 end
 
