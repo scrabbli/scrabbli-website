@@ -1,5 +1,8 @@
 require 'sinatra'
+require 'sinatra/simple-navigation'
+require 'simple-navigation-bootstrap'
 
+register Sinatra::SimpleNavigation
 get '/' do
   erb :index
 end
