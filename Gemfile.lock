@@ -11,6 +11,8 @@ GEM
       rack
     simple-navigation (3.10.1)
       activesupport (>= 2.3.2)
+    simple-navigation-bootstrap (0.0.4)
+      simple-navigation (>= 3.7.0)
     sinatra (1.4.2)
       rack (~> 1.5, >= 1.5.2)
       rack-protection (~> 1.4)
@@ -23,5 +25,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  simple-navigation-bootstrap
   sinatra
   sinatra-simple-navigation
