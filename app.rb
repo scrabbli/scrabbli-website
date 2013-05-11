@@ -24,13 +24,30 @@ post '/assignments' do
   redirect "/assignments"
 end
 
-get '/rules' do
-  render :haml, :rules
+get '/rules/getting-started' do
+  render :haml, :'rules/getting_started'
+end
+
+get '/rules/problem-statement' do
+  render :haml, :'rules/problem_statement'
+end
+
+get '/rules/tile-info' do
+  render :haml, :'rules/tile_info'
+end
+
+get '/rules/board-info' do
+  render :haml, :'rules/board_info'
+end
+
+get '/rules/dictionary' do
+  render :haml, :'rules/dictionary'
 end
 
 get '/schedule' do
-  render :haml, :schedule
+  render :haml, :'schedule'
 end
+
 
 after do
   ActiveRecord::Base.connection.close
