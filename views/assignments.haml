@@ -1,0 +1,31 @@
+%h2 Assignments
+
+%table.table.table-striped
+  %tr
+    %th Name
+    %th Language
+    %th Repo
+  - @assignments.each do |assignment|
+    %tr
+      %td= assignment.name
+      %td= assignment.language
+      %td
+        %a{href:assignment.github, target:'_blank'} link
+
+%legend Join Scrabbli
+- form_for :assignment , :assignments , id: 'assignment', class: 'form-horizontal' do |f|
+  .control-group
+    %label.control-label{for: "assignment_name"} Name:
+    .controls
+      = f.text_field :name, class: 'input-xlarge'
+  .control-group
+    %label.control-label{for: "assignment_language"} Language:
+    .controls
+      = f.text_field :language, class: 'input-xlarge'
+  .control-group
+    %label.control-label{for: "assignment_github"} Repo Link:
+    .controls
+      = f.text_field :github, class: 'input-xlarge'
+  .control-group
+    .controls
+      = f.submit 'Join Scrabbli' , :class => 'btn btn-primary'

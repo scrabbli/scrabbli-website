@@ -11,12 +11,12 @@ register Padrino::Helpers
 use ActiveRecord::ConnectionAdapters::ConnectionManagement
 
 get '/' do
-  render :erb, :index
+  render :haml, :index
 end
 
 get '/assignments' do
   @assignments = Assignment.all
-  render :erb, :assignments
+  render :haml, :assignments
 end
 
 post '/assignments' do
@@ -25,7 +25,11 @@ post '/assignments' do
 end
 
 get '/rules' do
-  render :erb, :rules
+  render :haml, :rules
+end
+
+get '/schedule' do
+  render :haml, :schedule
 end
 
 after do
