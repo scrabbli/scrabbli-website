@@ -32,6 +32,10 @@ get '/rules/problem-statement' do
   render :haml, :'rules/problem_statement'
 end
 
+get '/rules/make-play' do
+  render :haml, :'rules/make_play'
+end
+
 get '/rules/tile-info' do
   render :haml, :'rules/tile_info'
 end

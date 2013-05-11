@@ -6,6 +6,7 @@ SimpleNavigation::Configuration.run do |navigation|
     primary.item :rules, 'Rules', icon: 'icon-file' do |rules|
       rules.item :getting_started, 'Getting Started', '/rules/getting-started'
       rules.item :problem_statement, 'Problem Statement', '/rules/problem-statement'
+      rules.item :make_play, 'Making a Play', '/rules/make-play'
       rules.item :tile_info, 'Tile Info', '/rules/tile-info'
       rules.item :board, 'Board Info', '/rules/board-info'
       rules.item :dictionary, 'Dictionary', '/rules/dictionary'
