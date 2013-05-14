@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'haml'
 require 'active_support/core_ext'
 require 'sinatra/simple-navigation'
 require 'simple-navigation-bootstrap'
