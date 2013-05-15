@@ -16,7 +16,7 @@ get '/' do
 end
 
 get '/assignments' do
-  @assignments = Assignment.all
+  @assignments = Assignment.order('id')
   render :haml, :assignments
 end
 
