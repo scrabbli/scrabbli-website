@@ -12,6 +12,7 @@ SimpleNavigation::Configuration.run do |navigation|
       rules.item :dictionary, 'Dictionary', '/rules/dictionary'
     end
     primary.item :schedule, 'Schedule', '/schedule', icon: 'icon-calendar'
+    primary.item :awards, 'Awards', '/awards', icon: 'icon-trophy'
     primary.item :assignments, 'Assignments', '/assignments', icon: 'icon-user'
   end
 end

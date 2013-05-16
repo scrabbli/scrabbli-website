@@ -50,7 +50,11 @@ get '/rules/dictionary' do
 end
 
 get '/schedule' do
-  render :haml, :'schedule'
+  render :haml, :schedule
+end
+
+get '/awards' do
+  render :haml, :awards
 end
 
 
